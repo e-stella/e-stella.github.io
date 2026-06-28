@@ -1,0 +1,244 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# - RenderCV reads a CV written in a YAML file, and generates a PDF with professional typography.
+# - See the [documentation](https://docs.rendercv.com) for more details.
+cv:
+  name: Eun Sohl (Stella) Koh
+  headline: Software Research Engineer | Physics-Informed Modeling & Mask Tapeout Automation
+  location: Portland, OR | Bay Area, CA
+  email: eunsohlkoh@gmail.com
+  phone: +1-812-679-9115
+  social_networks:
+    - network: LinkedIn
+      username: eunsohlkoh
+    - network: GitHub
+      username: e-stella
+  custom_connections:
+      - placeholder: "Kaggle"
+        url: https://www.kaggle.com/eskella
+        fontawesome_icon: kaggle
+
+  sections:
+    Professional Summary:
+      # - Research engineer with 9+ years of experience developing physics-informed modeling and data pipelines for computational lithography and semiconductor manufacturing. Expertise in optical proximity correction, large-scale simulation pipelines, and ML model calibration workflows. Experienced in delivering production-grade Python systems with measurable impact on model accuracy, throughput, and robustness in manufacturing environments.
+    - Research engineer with a PhD in Physical Chemistry and 9+ years spanning semiconductor process engineering, materials characterization, and physics-based modeling. At Intel, worked across both the fabrication and computational sides of semiconductor manufacturing, developing and optimizing BEOL etch processes, applying SPC and DoE to drive yield improvement, and building ML-assisted resist CD models and Python-based layout automation frameworks for computational lithography. PhD research established a deep foundation in nanoscale materials characterization including interfacial chemistry, thermodynamics, and spectroscopic analysis using AFM, SEM, FTIR, and Raman. Brings a rare combination of software engineering, hands-on fab and lab experience, physics-based modeling depth, and experimental design rigor.
+
+
+
+    skills:
+      - label: Applied ML & Modeling
+        details: Model Calibration, Photo-resist CD Modeling (Empirical & ML-assisted), Statistical Modeling, Numerical Optimization; TensorFlow, Keras, Scikit-learn, SciPy, Pandas, PyTorch (applied).
+
+      - label: Software Engineering and Tools
+        details: Python, C++, SQL, Tcl, Shell, Make; GitLab CI/CD, Data Pipelines, High-Performance Computing (HPC) workflows, Object-Oriented Programming (OOP), SQLite, Unit Testing; MATLAB, JMP, JSL, CAD, LabVIEW hardware-software integration.
+
+      - label: Instrumentation & Optics
+        details: Ultrafast Laser Systems, Signal Processing, Precision Optical Alignment; FEM/FDTD (COMSOL, Lumerical), Computational Imaging (PSF/MTF analysis), Lithography process modeling (EUV).
+
+    experience:
+      - company: Intel
+        position: Software Research Engineer
+        start_date: 2019-04
+        end_date: 2025-08
+        location: Hillsboro, OR
+        highlights:
+          - Trained and evaluated ML-assisted resist CD models for production-level computational lithography; optimized physics-based modeling parameters to improve manufacturing tolerances by 5--15% (DTCO practice).
+
+          - Developed and maintained a Python-based framework replacing legacy Shell, Calibre Tcl, and DRC scripts; integrated OASIS layout generation, SQLite database management for SEM image analysis, and photomask floorplanning into a unified automated data-pipeline for reticle tapeout, reducing turnaround time by over 80%.
+
+          - Migrated OPC, failure prediction test cases, and tapeout flow codebase to GitLab with automated CI checks and unit testing, achieving 100% code quality adherence; served as repository owner performing routine code review.
+
+          - Developed calibration and regression flows to ensure model robustness across technology nodes, enabling data-driven decision-making and high-frequency iteration of process models.
+
+          - Collaborated with process, photomask, metrology, and manufacturing teams to deploy and validate test masks in production flows with strict quality and reliability requirements.
+
+      - company: Intel
+        position: TD Module Development Engineer
+        start_date: 2016-10
+        end_date: 2019-04
+        location: Hillsboro, OR
+        highlights:
+          - Developed and optimized advanced BEOL etch processes at 14nm--7nm nodes in a Class 1 cleanroom environment; conducted defect root-cause analysis, metrology characterization, and cross-functional collaboration with equipment vendors to improve process stability, yield, and manufacturability.
+          - Engineered reusable reporting tools using SQL to monitor in-line fab performance data and optimize tool performance metrics.
+
+      - company: Indiana University Bloomington
+        position: Ph.D Research Assistant
+        start_date: 2010-08
+        end_date: 2016-08
+        location: Bloomington, IN
+        highlights:
+          - Designed and constructed in-house a photothermal interference microscope, integrating pulsed lasers, acousto-optic modulators (AOMs), and reflective objectives for sub-resolution limit imaging.
+
+          - Engineered custom high-speed data acquisition (DAQ) and real-time analysis systems using LabVIEW; implemented signal processing to extract nanoscale features from low-SNR measurements.
+
+          - Conducted FEM/FDTD electromagnetic simulations and developed physics-based image formation models to interpret complex signal generation and nanoparticle--polymer layer thermal dynamics.
+
+    education:
+      - institution: Indiana University Bloomington
+        area: Physical Chemistry
+        degree: PhD
+        location: Bloomington, IN
+        summary: Focus on optical imaging, signal modeling, and analysis of nanoscale physical properties
+        highlights:
+          - 'Thesis: Interfacial Chemistry & Light-Induced Nanoparticle Interactions Studied by Photothermal Heterodyne Detection'
+          - 'Advisor: Prof. Bogdan Dragnea'
+          - NSF Graduate Research Fellowship, ChemGRC Travel Award, Indiana Microscopy Society Poster Award
+
+      - institution: Indiana University Bloomington
+        area: Biochemistry
+        degree: BS
+        location: Bloomington, IN
+        summary: Minors in Physics, Math, Psychology
+        highlights:
+          - Dean's Honors Award
+
+
+    Selected Certifications:
+      - bullet: AI Infrastructure and Operations Fundamentals - [NVIDIA](https://coursera.org/share/40e5b45566bedf92b807eba6e135c4ba)
+      - bullet: Machine Learning in Production - [DeepLearning.AI](https://learn.deeplearning.ai/certificates/a14927b6-91d9-4572-b612-4ded63744578)
+
+
+    Selected Publications:
+      - reversed_number: __Studies of nanoparticle-assisted photoannealing of polydimethylsiloxane by time-harmonic photothermal microscopy__, Maryam Zahedian, *Eun Sohl (Stella) Koh*, Bogdan Dragnea, [ACS Photonics 2020](https://doi.org/10.1021/acsphotonics.0c00968)
+      - reversed_number: __Photothermal microspectroscopy with Bessel--Gauss beams and reflective objectives__, Maryam Zahedian, *Eun Sohl (Stella) Koh*, Bogdan Dragnea, [Applied Optics 2019](https://doi.org/10.1364/ao.58.007352)
+      - reversed_number: __Measurement of Nanoparticle Adlayer Properties by Photothermal Microscopy__, Eun Sohl (Stella) Koh*, James McDonald, Irina Tsvetkova, Bogdan Dragnea, [The Journal of Physical Chemistry Letters 2015](https://doi.org/10.1021/acs.jpclett.5b01493)
+      - reversed_number: __Photothermal Imaging of Protein Shell Stoichiometry in HIV-like Particles__, Mario Vieweger, Nancy Goicochea, *Eun Sohl (Stella) Koh*, Bogdan Dragnea, [ACS Nano 2011](https://doi.org/10.1021/nn202184x)
+
+
+
+
+
+    # publications:
+    #   - title: 'Studies of nanoparticle-assisted photoannealing of polydimethylsiloxane by time-harmonic photothermal microscopy'
+    #     authors:
+    #       - Maryam Zahedian
+    #       - '*Eun Sohl (Stella) Koh*'
+    #       - Bogdan Dragnea
+    #     doi: 10.1021/acsphotonics.0c00968
+    #     journal: ACS Photonics 2020
+    #     date: 2020-09
+
+    #   - title: Photothermal microspectroscopy with Bessel--Gauss beams and reflective objectives
+    #     authors:
+    #       - Maryam Zahedian
+    #       - '*Eun Sohl (Stella) Koh*'
+    #       - Bogdan Dragnea
+    #     doi: 10.1364/ao.58.007352
+    #     journal: Applied Optics 2019
+    #     date: 2019-09
+
+    #   - title: Measurement of Nanoparticle Adlayer Properties by Photothermal Microscopy
+    #     authors:
+    #       - '*Eun Sohl (Stella) Koh*'
+    #       - James McDonald
+    #       - Irina Tsvetkova
+    #       - Bogdan Dragnea
+    #     doi: 10.1021/acs.jpclett.5b01493
+    #     journal: The Journal of Physical Chemistry Letters 2015
+    #     date: 2015-09
+
+    #   - title: Photothermal Imaging of Protein Shell Stoichiometry in HIV-like Particles
+    #     authors:
+    #       - Mario Vieweger
+    #       - Nancy Goicochea
+    #       - '*Eun Sohl (Stella) Koh*'
+    #       - Bogdan Dragnea
+    #     doi: 10.1021/nn202184x
+    #     journal: ACS Nano 2011
+    #     date: 2011-08
+
+    # invited_talks:
+    Selected Talks:
+      - reversed_number: In situ measurement of adlayer growth and adlayer hydration on metal nanoparticles by photothermal microscopy - The International Chemical Congress of Pacific Basin Societies (2015)
+      # - reversed_number: Metal Nanoparticle Adlayer Growth, Hydration, and Desorption by Photothermal Microscopy - IU Materials Chemistry Symposium (2015)
+      - reversed_number: Photothermal Detection of Single Particle Chemical Dynamics - American Chemical Society (2013)
+      - reversed_number: Photothermal Imaging and Real-Time Tracking of Single Virus-Like Particle - Gordon Research Conference (GRC) Physical Virology (2013) - Poster
+      # - reversed_number: Studies of Protein Adsorption in Virus-Like Nanoparticle by Photothermal Imaging - Indiana Microscopy Society (INMS) (2012)
+      - reversed_number: Optical Forces in Dense Nanoparticle Suspensions - Materials Research Society (2012)
+      # - reversed_number: Studies of Interplay between Optical, Thermal, and Interfacial Interactions in Dense Metal Nanoparticle Suspensions - ACS Central Regional Meeting (2011) - Poster
+
+
+design:
+  theme: engineeringclassic
+  page:
+    size: us-letter
+    top_margin: 0.25in
+    bottom_margin: 0.25in
+    left_margin: 0.25in
+    right_margin: 0.25in
+    show_footer: true
+    show_top_note: false
+  typography:
+    line_spacing: 0.65em
+    alignment: justified
+    date_and_location_column_alignment: right
+    font_family:
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+    font_size:
+      body: 10.5pt
+      name: 15pt
+      headline: 12pt
+      connections: 10pt
+      section_titles: 1.4em
+  header:
+    alignment: center
+    space_below_name: 0.3cm
+    space_below_headline: 0.5cm
+    space_below_connections: 0.7cm
+    connections:
+      phone_number_format: national
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: ''
+      space_between_connections: 0.5cm
+  section_titles:
+    type: with_partial_line
+    line_thickness: 0.7pt
+    space_above: 0.6cm
+    space_below: 0.5cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.9em
+    space_between_text_based_entries: 0.3em
+    show_time_spans_in:
+      - experience
+  entries:
+    date_and_location_width: 3.15cm
+    side_space: 0.1cm
+    space_between_columns: 0.1cm
+    allow_page_break: false
+    short_second_row: true
+    summary:
+      space_above: 0cm
+      space_left: 0cm
+    highlights:
+      bullet: •
+      nested_bullet: ◦
+      space_left: 0.15cm
+      space_above: 0cm
+      space_between_items: 0cm
+      space_between_bullet_and_text: 0.5em
+
+locale:
+  language: english
+
+settings:
+  current_date: '2026-01-11'
+  render_command:
+    design:
+    locale:
+    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: false
+  bold_keywords: []

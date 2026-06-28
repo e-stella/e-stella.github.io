@@ -3,79 +3,302 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website" />
-  <title>Your Name</title>
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Eun Sohl (Stella) Koh, Ph.D. — Physics-Informed ML for Semiconductor Process" />
+  <title>Eun Sohl (Stella) Koh, Ph.D.</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var dark = stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      if (dark) document.documentElement.setAttribute("data-theme", "dark");
+    })();
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="#">Your Name</a>
-    <nav aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>Your Name</h1>
-      <p class="lead">
-        A short line about what you do — designer, developer, writer, or whatever fits you.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#contact">Get in touch</a>
-        <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <div class="page">
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <h1 class="site-name">Eun Sohl (Stella) Koh</h1>
+        <p class="site-subtitle">Ph.D.</p>
+      </header>
+
+      <figure class="profile-photo">
+        <img src="images/StellaKoh-12.jpg" alt="Eun Sohl (Stella) Koh" width="200" height="250" />
+      </figure>
+
+      <nav class="sidebar-nav" aria-label="Page sections">
+        <a href="#biography">Biography</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#experience">Research &amp; Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Selected Talks</a>
+        <a href="#skills">Skills &amp; Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <span class="theme-toggle-label">Theme</span>
+        </button>
       </div>
-    </section>
+    </aside>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        Replace this with a few sentences about yourself. GitHub Pages hosts this site for free —
-        edit <code>index.html</code> and <code>styles.css</code>, push to GitHub, and your changes go live in a minute or two.
-      </p>
-    </section>
+    <div class="content-wrap">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="sidebar-nav-mobile" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
 
-    <section id="work" class="section">
-      <h2>Work</h2>
-      <ul class="card-grid">
-        <li class="card">
-          <h3>Project one</h3>
-          <p>A one-line description of something you built or care about.</p>
-          <a href="#">Learn more →</a>
-        </li>
-        <li class="card">
-          <h3>Project two</h3>
-          <p>Another highlight — link to a repo, article, or portfolio piece.</p>
-          <a href="#">Learn more →</a>
-        </li>
-        <li class="card">
-          <h3>Project three</h3>
-          <p>Add as many cards as you like, or delete this section entirely.</p>
-          <a href="#">Learn more →</a>
-        </li>
-      </ul>
-    </section>
+      <nav id="sidebar-nav-mobile" class="sidebar-nav mobile-nav" aria-label="Page sections">
+        <a href="#biography">Biography</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#experience">Research &amp; Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Selected Talks</a>
+        <a href="#skills">Skills &amp; Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <section id="contact" class="section contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:you@example.com">you@example.com</a>
-      </p>
-    </section>
-  </main>
+      <main id="main" class="content">
+        <section id="biography" class="content-section">
+          <h2>Biography</h2>
+          <p>
+            Eun Sohl (Stella) Koh is a research engineer focused on physics-informed ML and automation for
+            semiconductor process. She spent 9+ years at Intel, most recently as a Software Research Engineer
+            in computational lithography, following work as a TD Module Development Engineer in Class 1 cleanroom
+            environments. She received her Ph.D. in Physical Chemistry from Indiana University, advised by
+            Prof. Bogdan Dragnea.
+          </p>
+          <p>
+            Research engineer with deep roots in both fabrication and computation. At Intel, she developed and
+            optimized BEOL etch processes, then moved into computational lithography — building ML-assisted resist
+            CD models and Python automation frameworks for reticle tapeout that cut turnaround by ~80%. PhD research
+            established a foundation in nanoscale optical instrumentation, including a custom photothermal interference
+            microscope and integrated FEM/FDTD thermo-optics simulation.
+          </p>
+          <p class="note">Portland, OR (open to Bay Area)</p>
+        </section>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Your Name</p>
-  </footer>
+        <section id="highlights" class="content-section">
+          <h2>Highlights</h2>
+          <ul class="plain-list highlight-list">
+            <li><strong>Technical focus:</strong> physics-informed ML, computational lithography, resist CD modeling, EDA pipeline automation, optical instrumentation</li>
+            <li><strong>Applied experience:</strong> 9+ years at Intel across fab process engineering and software research; production-oriented Python systems for tapeout and model calibration</li>
+            <li><strong>Publications:</strong> 4 peer-reviewed papers in <em>ACS Photonics</em>, <em>Applied Optics</em>, <em>JPCL</em>, and <em>ACS Nano</em></li>
+            <li><strong>Process nodes:</strong> hands-on experience at 14nm–Intel 4 BEOL etch; HiNA-EUV (Intel 18A) reticle build automation for lithography process window development</li>
+          </ul>
+        </section>
+
+        <section id="experience" class="content-section">
+          <h2>Research &amp; Work Experience</h2>
+
+          <article class="entry">
+            <h3 class="entry-org">Intel Corporation</h3>
+            <p class="entry-role">Software Research Engineer, 2019–2025</p>
+            <p class="entry-location">Hillsboro, OR USA</p>
+            <ul>
+              <li>Trained and evaluated ML-assisted photoresist optical proximity effect models for production-level computational lithography, correlating simulated performance against measured wafer data to improve manufacturing tolerances by 5–15%.</li>
+              <li>Developed and maintained a Python-based data pipeline replacing legacy Shell, Calibre Tcl, DRC scripts</li>
+              <li>Integrated OASIS layout generation, SQLite database management, and metadata generation for SEM image analysis into a unified automated EDA workflow for reticle tapeout, reducing plate build cycle from months to ~2 weeks.</li>
+              <li>Led and contributed to migration of OPC tapeout flows to GitLab with CI checks and unit testing, serving as repository owner for code review and maintenance.</li>
+              <!-- <li>Built calibration and regression flows for model robustness across technology nodes</li> -->
+              <li>Collaborated with process, photomask, metrology, and manufacturing teams to deploy and validate test masks in production flows with strict quality and reliability requirements.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <p class="entry-role">TD Module Development Engineer, 2016–2019</p>
+            <p class="entry-location">Hillsboro, OR USA</p>
+            <ul>
+              <li>Optimized wet chemical etch processes for BEOL interconnect stacks using single-wafer spin-spray tools with multi-nozzle dispense arms, tuning scan pattern, rotation speed, and chemistry/temperature to control etch rate, uniformity, and defectivity.</li>
+              <li>Led tool matching and qualification for newly installed wet etch systems from equipment vendors, ensuring tool-to-tool consistency for production readiness.</li>
+              <li>Characterized wet etch process capability via etch rate, defectivity, and in-line metrology analysis; root-caused yield-limiting defects in collaboration with equipment vendors.</li>
+
+              <!-- <li>Developed and optimized advanced BEOL etch processes at 14nm–7nm nodes in a Class 1 cleanroom</li> -->
+              <!-- <li>Conducted EUV process window evaluation and TEM / AFM / SEM / FTIR / Raman characterization</li> -->
+              <li>Engineered SQL-based reporting tools to monitor in-line fab performance data</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3 class="entry-org">Indiana University Bloomington</h3>
+            <p class="entry-role">Ph.D. Research Assistant, 2010–2016</p>
+            <p class="entry-location">Bloomington, IN USA</p>
+            <ul>
+              <li>Designed and constructed in-house a photothermal interference microscope (a custom optical imaging system), integrating pulsed lasers, acousto-optic modulators (AOMs), single mode optical fibers, continuum laser, and reflective objectives for sub-resolution limit imaging.</li>
+              <li>Engineered custom high-speed data acquisition (DAQ) and real-time analysis systems using LabVIEW, implementing signal processing to extract nanoscale features from low-SNR measurements.</li>
+              <li>Conducted FEM/FDTD electromagnetic simulations in Lumerical and COMSOL. Developed physics-based image formation models to interpret signal generation and nanostructure thermal dynamics.</li>
+
+<!-- 
+              <li>Designed and built a stage-scanning photothermal interference microscope from scratch</li>
+              <li>Conducted FEM/FDTD electromagnetic simulations and physics-based image formation models</li>
+              <li>Researched nanoparticle interfacial chemistry and nanoscale thermal dynamics</li>
+              <li>Published 4 papers in photonics and nanomaterials venues</li> -->
+            </ul>
+          </article>
+        </section>
+
+        <section id="education" class="content-section">
+          <h2>Education</h2>
+
+          <article class="entry entry--compact">
+            <h3 class="entry-org">Indiana University Bloomington</h3>
+            <p class="entry-role">Ph.D. in Physical Chemistry, 2016</p>
+            <p class="entry-detail">Thesis: Interfacial chemistry &amp; light-induced nanoparticle interactions (Advisor: Prof. Bogdan Dragnea)</p>
+          </article>
+
+          <article class="entry entry--compact">
+            <h3 class="entry-org">Indiana University Bloomington</h3>
+            <p class="entry-role">B.S. in Biochemistry</p>
+            <p class="entry-detail">Minors in Physics, Math, and Psychology</p>
+          </article>
+
+          <h3 class="subsection-heading">Certifications</h3>
+          <ul class="plain-list">
+            <li>NVIDIA AI Infrastructure and Operations Fundamentals</li>
+            <li>Machine Learning in Production — DeepLearning.AI</li>
+            <li>Python for Computer Vision</li>
+            <li>MongoDB AI Agents</li>
+          </ul>
+        </section>
+
+        <section id="publications" class="content-section">
+          <h2>Publications</h2>
+          <ol class="pub-list">
+            <li>
+              Studies of nanoparticle-assisted photoannealing of polydimethylsiloxane by time-harmonic photothermal microscopy,
+              Maryam Zahedian, <strong>Eun Sohl (Stella) Koh</strong>, Bogdan Dragnea,
+              <em>ACS Photonics</em> (2020).
+              <a href="https://doi.org/10.1021/acsphotonics.0c00968" target="_blank" rel="noopener noreferrer">doi:10.1021/acsphotonics.0c00968</a>
+            </li>
+            <li>
+              Photothermal microspectroscopy with Bessel–Gauss beams and reflective objectives,
+              Maryam Zahedian, <strong>Eun Sohl (Stella) Koh</strong>, Bogdan Dragnea,
+              <em>Applied Optics</em> (2019).
+              <a href="https://doi.org/10.1364/ao.58.007352" target="_blank" rel="noopener noreferrer">doi:10.1364/ao.58.007352</a>
+            </li>
+            <li>
+              Measurement of Nanoparticle Adlayer Properties by Photothermal Microscopy,
+              <strong>Eun Sohl (Stella) Koh</strong>, James McDonald, Irina Tsvetkova, Bogdan Dragnea,
+              <em>The Journal of Physical Chemistry Letters</em> (2015).
+              <a href="https://doi.org/10.1021/acs.jpclett.5b01493" target="_blank" rel="noopener noreferrer">doi:10.1021/acs.jpclett.5b01493</a>
+            </li>
+            <li>
+              Photothermal Imaging of Protein Shell Stoichiometry in HIV-like Particles,
+              Mario Vieweger, Nancy Goicochea, <strong>Eun Sohl (Stella) Koh</strong>, Bogdan Dragnea,
+              <em>ACS Nano</em> (2011).
+              <a href="https://doi.org/10.1021/nn202184x" target="_blank" rel="noopener noreferrer">doi:10.1021/nn202184x</a>
+            </li>
+          </ol>
+        </section>
+
+        <section id="talks" class="content-section">
+          <h2>Selected Talks</h2>
+          <ul class="plain-list talk-list">
+            <li>
+              <strong>In situ measurement of adlayer growth and adlayer hydration on metal nanoparticles by photothermal microscopy</strong>
+              — The International Chemical Congress of Pacific Basin Societies (2015)
+            </li>
+            <li>
+              <strong>Photothermal Detection of Single Particle Chemical Dynamics</strong>
+              — American Chemical Society (2013)
+            </li>
+            <li>
+              <strong>Photothermal Imaging and Real-Time Tracking of Single Virus-Like Particle</strong>
+              — Gordon Research Conference (GRC) Physical Virology (2013) · Poster
+            </li>
+            <li>
+              <strong>Optical Forces in Dense Nanoparticle Suspensions</strong>
+              — Materials Research Society (2012)
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills" class="content-section">
+          <h2>Skills &amp; Interests</h2>
+          <ul class="plain-list">
+            <li><strong>Computational lithography &amp; OPC:</strong> OPC calibration, SRAF, ILT, resist CD modeling, EUV</li>
+            <li><strong>ML / AI engineering:</strong> Python automation, ML pipelines, resist modeling, TensorFlow, PyTorch, scikit-learn</li>
+            <li><strong>Optical instrumentation:</strong> Custom photothermal microscopy, Lumerical FDTD, COMSOL FEM</li>
+            <li><strong>Semiconductor process:</strong> 14nm–7nm BEOL etch, EUV, TEM / AFM / SEM / FTIR / Raman</li>
+            <li><strong>Tools:</strong> Python, C++, SQL, GitLab CI/CD, EDA tools, MongoDB</li>
+            <li><strong>Interests:</strong> Classical music (Beaverton Symphony Orchestra), physics-informed modeling</li>
+          </ul>
+        </section>
+
+        <section id="contact" class="content-section">
+          <h2>Contact</h2>
+          <p>
+            Open to roles in computational lithography, ML/AI engineering, optical instrumentation, and
+            semiconductor process engineering.
+          </p>
+          <p class="contact-links">
+            <a href="mailto:eunsohlkoh@gmail.com">eunsohlkoh@gmail.com</a>
+            ·
+            <a href="https://www.linkedin.com/in/eunsohlkoh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            ·
+            <a href="https://scholar.google.com/citations?user=j-CQNS8AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            ·
+            <a href="https://github.com/e-stella" target="_blank" rel="noopener noreferrer">GitHub</a>
+            ·
+            <a href="https://www.kaggle.com/eskella" target="_blank" rel="noopener noreferrer">Kaggle</a>
+          </p>
+          <p class="note">Portland, OR</p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Eun Sohl Koh</p>
+      </footer>
+    </div>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const navToggle = document.querySelector(".nav-toggle");
+    const mobileNav = document.getElementById("sidebar-nav-mobile");
+    navToggle.addEventListener("click", () => {
+      const open = mobileNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", open);
+    });
+    document.querySelectorAll(".sidebar-nav a, .mobile-nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const themeToggle = document.getElementById("theme-toggle");
+    const root = document.documentElement;
+
+    function setTheme(dark) {
+      if (dark) {
+        root.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+        themeToggle.setAttribute("aria-label", "Switch to light mode");
+        themeToggle.title = "Light mode";
+      } else {
+        root.removeAttribute("data-theme");
+        localStorage.setItem("theme", "light");
+        themeToggle.setAttribute("aria-label", "Switch to dark mode");
+        themeToggle.title = "Dark mode";
+      }
+    }
+
+    setTheme(root.getAttribute("data-theme") === "dark");
+    themeToggle.addEventListener("click", () => {
+      setTheme(root.getAttribute("data-theme") !== "dark");
+    });
   </script>
 </body>
 </html>

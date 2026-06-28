@@ -1,50 +1,41 @@
-# My website
+# e-stella.github.io
 
-A simple personal site hosted on [GitHub Pages](https://pages.github.com/) — free with any GitHub account.
+Personal site for [@e-stella](https://github.com/e-stella), hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Preview locally
-
-Open `index.html` in your browser, or run:
 
 ```bash
 cd /Users/eskoh/Documents/my-website
 python3 -m http.server 8000
 ```
 
-Then visit http://localhost:8000
+Visit http://localhost:8000
 
 ## Publish to GitHub
 
-1. Sign in at [github.com](https://github.com).
-2. Click **+** → **New repository**.
-3. Name it `my-website` (or any name you like).
-4. Leave it empty (no README) — this folder already has files.
-5. In Terminal, from this folder:
+1. Create a new repo at [github.com/new](https://github.com/new) named **`e-stella.github.io`** (this gives you the clean URL below).
+2. Leave it empty — do not add a README.
+3. Push:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/my-website.git
+cd /Users/eskoh/Documents/my-website
+git remote add origin https://github.com/e-stella/e-stella.github.io.git
 git branch -M main
 git push -u origin main
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username.
+4. **Settings → Pages** → deploy from branch **`main`**, folder **`/ (root)`**.
+5. Your site will be live at **https://e-stella.github.io**
 
-6. On GitHub: **Settings** → **Pages** → **Build and deployment**:
-   - **Source**: Deploy from a branch
-   - **Branch**: `main` / `/ (root)`
-7. Save. After 1–2 minutes your site is live at:
-
-   `https://YOUR_USERNAME.github.io/my-website/`
-
-## Optional: custom URL at username.github.io
-
-Rename the repo to `YOUR_USERNAME.github.io` (exactly your username). Then the site URL is:
-
-`https://YOUR_USERNAME.github.io`
+If you use a different repo name (e.g. `my-website`), the URL is `https://e-stella.github.io/my-website/` instead.
 
 ## Edit the site
 
-- `index.html` — content and structure
-- `styles.css` — colors, fonts, layout
+- `index.html` — content
+- `styles.css` — design
 
-Push changes with `git add .`, `git commit -m "Update site"`, `git push`.
+```bash
+git add .
+git commit -m "Update site"
+git push
+```
